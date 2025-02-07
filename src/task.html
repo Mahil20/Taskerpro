@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Tasker | Home Task Helper</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TaskerPro</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="post.html">Post a Task</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="task.html" class="signup-btn">Become a Tasker</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section for Taskers -->
+    <section class="hero-tasker">
+        <div class="hero-content">
+            <h1>Become a Tasker</h1>
+            <p>Earn money by helping people with everyday tasks. Sign up today!</p>
+            <a href="#tasker-form" class="cta-btn">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="tasker-benefits">
+        <h2>Why Become a Tasker?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <img src="flexible-icon.png" alt="Flexible Hours">
+                <h3>Flexible Hours</h3>
+                <p>Work when you want, where you want. You control your schedule.</p>
+            </div>
+            <div class="benefit-item">
+                <img src="earn-money-icon.png" alt="Earn Money">
+                <h3>Earn Money</h3>
+                <p>Get paid for your skills. The more tasks you complete, the more you earn.</p>
+            </div>
+            <div class="benefit-item">
+                <img src="support-icon.png" alt="Support">
+                <h3>24/7 Support</h3>
+                <p>Our team is here to support you with any issues or questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tasker Signup Form -->
+    <section id="tasker-form" class="tasker-form-section">
+        <h2>Join TaskerPro as a Tasker</h2>
+        <form id="taskerSignupForm" class="tasker-form" action="#">
+            <!-- Personal Information -->
+            <h3>Personal Information</h3>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Skills and Services -->
+            <h3>What Services Can You Offer?</h3>
+            <div class="form-group">
+                <label for="skills">Select Your Skills</label>
+                <select id="skills" name="skills" multiple required>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="handyman">Handyman</option>
+                    <option value="moving">Moving</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="furniture-assembly">Furniture Assembly</option>
+                </select>
+            </div>
+
+            <!-- Availability -->
+            <h3>Your Availability</h3>
+            <div class="form-group">
+                <label for="availability">When Are You Available?</label>
+                <input type="text" id="availability" name="availability" placeholder="e.g. Weekdays 9AM-5PM" required>
+            </div>
+
+            <!-- Location -->
+            <h3>Your Location</h3>
+            <div class="form-group">
+                <label for="location">City / Region</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Sign Up as a Tasker</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TaskerPro. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Support</a>
+        </div>
+    </footer>
+
+    <script src="task.js"></script>
+</body>
+</html>

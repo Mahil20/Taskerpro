@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task Helper</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TaskerPro</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="task.html">Become a Tasker</a></li>
+            <li><div class="select-container">
+                <select id="sectionSelect" onchange="redirectToPage()">
+                    <option value="">--Services--</option>
+                    <option value="#">Cooking</option>
+                    <option value="#">Shifting</option>
+                    <option value="#">Plumbing</option>
+                    <option value="#">Electriction</option>
+                    <option value="#">Cleaning</option>
+                    <option value="#">Painting</option>
+                </select>
+            </div></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+        
+ 
+            
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero"> 
+        <div class="hero-content">
+            <h1>Hire Skilled Taskers Near You</h1>
+            <p>Get your tasks done quickly and efficiently by local experts.</p>
+            <input type="text" placeholder="Search for services..." class="search-bar">
+        </div>
+    </section>
+
+    <!-- Popular Services -->
+    <section class="services">
+        <h2>Popular Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=100&id=HMwxzLul2dfm&format=png&color=000000" alt="Assembly">
+                <h3>Assembly</h3>
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=100&id=EtSx5eGVIR2y&format=png&color=000000" alt="Cleaning">
+                <h3>Cleaning</h3>
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=100&id=rwjfashjpGRv&format=png&color=000000" alt="Cooking">
+                <h3>Cooking</h3>
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=100&id=sH5IBgX3H7wP&format=png&color=000000" alt="Moving">
+                <h3>Moving</h3>
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=100&id=9TqTwCc0UVkM&format=png&color=000000" alt="Painting">
+                <h3>Painting</h3>
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=100&id=GiL3hiAx1vEm&format=png&color=000000" alt="Home Repair">
+                <h3>Home Repair</h3>
+            </div>
+            <div class="service-item">
+                <img src="https://img.icons8.com/?size=100&id=vGFJhv8oyS5d&format=png&color=000000" alt="Gardening">
+                <h3>Gardening</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step" id="menswithComputer">
+                <img src="mensOnLaptop.png" alt="Step 1">
+                <h3>1.Post Your Task</h3>
+                <p>Describe the job and when you need it done.</p>
+            </div>
+            <div class="step" id="manonMobile">
+                <img src="manOnMobile.png" alt="Step 2">
+                <h3>2.Select a Tasker</h3>
+                <p>Choose from a list of qualified taskers.</p>
+            </div>
+            <div class="step" id="manwithHammer">
+                <img src="manwithhammer.png" alt="Step 3">
+                <h3>3.Get It Done</h3>
+                <p>Relax and let your tasker handle the job.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <img src="client1.jpg" alt="Client 1">
+                <p>"Amazing service! My house has never been cleaner."</p>
+                <h4>Jane Doe</h4>
+            </div>
+            <div class="testimonial">
+                <img src="client2.jpg" alt="Client 2">
+                <p>"The handyman fixed everything in no time!"</p>
+                <h4>John Smith</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TaskerPro. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Download App</a>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.search-bar').addEventListener('input', function(e) {
+    console.log('Search query: ', e.target.value);
+});
+    function redirectToPage() {
+        const select = document.getElementById('sectionSelect');
+        const selectedValue = select.value;
+        if (selectedValue) {
+            window.location.href = selectedValue; // Redirect to the selected page
+        }
+    }
+</script>
+</body>
+</html>

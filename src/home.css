@@ -1,0 +1,207 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.signup-btn {
+    background-color: #1abc9c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+.select-container {
+    text-align: center;
+}
+.select-container label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+#sectionSelect {
+    padding: 2px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+#sectionSelect:hover {
+    border-color: #007BFF; /* Change border color on hover */
+}
+
+/* Hero Section */
+.hero {
+   
+
+        background-image: url('carpentring.jpg'); /* Replace with your image URL */
+        background-size: cover; /* Cover the entire section */
+        background-position: center; /* Center the image */
+        height: 800px; /* Set a height for the section */
+        color: rgb(245, 241, 241); /* Text color */
+        display: flex; /* Flexbox for centering content */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        text-align: center; /* Center text */
+
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+.search-bar {
+    padding: 10px;
+    width: 60%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.service-item img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.step {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+
+.step img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+#manwithHammer img{
+    margin-top: 50px;
+    
+}
+#menswithComputer img{
+  margin-top: 50px;
+  height: 135.325px;
+  width: 120px;
+}
+#manonMobile img{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    height: 135.325px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    text-align: center;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* bhbhu */
+
+/*.hero {
+    height: 100vh; 
+    background-image: url("C:\Users\Mahil kadam\classroom1\bgm.jpg"), url("C:\Users\Mahil kadam\classroom1\car1.jpeg"), url("C:\Users\Mahil kadam\classroom1\carpentring.jpg"); 
+    background-size: cover; 
+    background-position: 0% 0%, 100% 0%, 200% 0%;
+    background-repeat: no-repeat; 
+}*/

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Task | Home Task Helper</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TaskerPro</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="task.html">Become a Tasker</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="post.html" class="signup-btn">Post a Task</a></li>
+        </ul>
+    </nav>
+
+    <!-- Post a Task Section -->
+    <section class="post-task-section">
+        <div class="post-task-container">
+            <h2>Post a Task</h2>
+            <p>Need help with something? Post your task below and get matched with skilled Taskers.</p>
+
+            <form id="postTaskForm" class="post-task-form" action="#" method="task">
+                <!-- Task Category -->
+                <h3>What Type of Task Do You Need?</h3>
+                <div class="form-group">
+                    <label for="taskCategory">Select Task Category</label>
+                    <select id="taskCategory" name="taskCategory" required>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="handyman">Handyman</option>
+                        <option value="moving">Moving</option>
+                        <option value="furniture-assembly">Furniture Assembly</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div>
+
+                <!-- Task Details -->
+                <h3>Task Details</h3>
+                <div class="form-group">
+                    <label for="taskTitle">Task Title</label>
+                    <input type="text" id="taskTitle" name="taskTitle" placeholder="e.g. Help me move furniture" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskDescription">Task Description</label>
+                    <textarea id="taskDescription" name="taskDescription" rows="4" placeholder="Provide details about the task" required></textarea>
+                </div>
+
+                <!-- Task Date and Time -->
+                <h3>When Do You Need This Done?</h3>
+                <div class="form-group">
+                    <label for="taskDate">Select Date</label>
+                    <input type="date" id="taskDate" name="taskDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskTime">Preferred Time</label>
+                    <input type="time" id="taskTime" name="taskTime">
+                </div>
+
+                <!-- Task Location -->
+                <h3>Where Should the Task Be Done?</h3>
+                <div class="form-group">
+                    <label for="taskLocation">Task Location</label>
+                    <input type="text" id="taskLocation" name="taskLocation" placeholder="Enter your address or location" required>
+                </div>
+
+                <!-- Budget -->
+                <h3>Your Budget</h3>
+                <div class="form-group">
+                    <label for="taskBudget">How Much Are You Willing to Pay?</label>
+                    <input type="number" id="taskBudget" name="taskBudget" placeholder="Enter budget in USD" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Post Task</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TaskerPro. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Support</a>
+        </div>
+    </footer>
+
+    <script src="post.js"></script>
+</body>
+</html>
